@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://cha2twkp0kavr"]
+
+[node name="Node2D" type="Node2D"]
+metadata/if_you_see_this = "it worked"
