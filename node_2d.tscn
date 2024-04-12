@@ -869,15 +869,15 @@ layer_0/tile_data = PackedInt32Array(131070, 131074, 3, 131071, 131074, 3, 65536
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
-[node name="RigidBody2D" type="RigidBody2D" parent="."]
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 script = ExtResource("2_d4lqk")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(-63.7734, -13.2266)
 scale = Vector2(0.445313, 0.445313)
 shape = SubResource("RectangleShape2D_vla8v")
 
-[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
 position = Vector2(-63.7734, -13.2266)
 scale = Vector2(0.445313, 0.445313)
 texture = ExtResource("2_l710w")

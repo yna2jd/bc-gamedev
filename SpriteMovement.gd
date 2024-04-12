@@ -1,5 +1,4 @@
-extends RigidBody2D
-
+extends CharacterBody2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -8,4 +7,8 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	var velocity = Vector2.ZERO
+	if Input.is_action_pressed("Move Right"):
+		velocity.x = 50;
+	if Input.is_action_pressed("Move Left"):
+		velocity.x = -50;
