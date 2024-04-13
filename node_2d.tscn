@@ -871,6 +871,7 @@ layer_0/tile_data = PackedInt32Array(131070, 131074, 3, 131071, 131074, 3, 65536
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 script = ExtResource("2_d4lqk")
+speed = 2323.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(-63.7734, -13.2266)
