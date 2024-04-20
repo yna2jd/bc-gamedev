@@ -853,7 +853,8 @@ texture_region_size = Vector2i(64, 64)
 
 [sub_resource type="TileSet" id="TileSet_m60m2"]
 tile_size = Vector2i(64, 64)
-physics_layer_0/collision_layer = 1
+physics_layer_0/collision_layer = 2
+physics_layer_0/collision_mask = 2
 sources/2 = SubResource("TileSetAtlasSource_0f2ro")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vla8v"]
@@ -864,12 +865,14 @@ metadata/if_you_see_this = "it worked"
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_m60m2")
+collision_animatable = true
 format = 2
 layer_0/tile_data = PackedInt32Array(131070, 131074, 3, 131071, 131074, 3, 65536, 131074, 3, 65537, 131074, 3, 131069, 131074, 3, 196605, 2, 3, 262141, 2, 3, 327677, 2, 3, 327678, 2, 3, 262142, 2, 3, 196606, 2, 3, 196607, 2, 3, 262143, 2, 3, 196608, 2, 3, 262144, 2, 3, 131072, 2, 3, 131073, 2, 3, 196609, 2, 3, 262145, 2, 3, 327679, 2, 3, 65534, 589826, 3, 2, 720898, 2, 131068, 458754, 5, 65538, 524290, 5, 393213, 2, 3, 393214, 2, 3, 393215, 2, 3, 327680, 2, 3, 327681, 2, 3, 393217, 2, 3, 393216, 2, 3, 458751, 2, 3, 458750, 2, 3, 458749, 2, 3, 524285, 2, 3, 524286, 2, 3, 524287, 2, 3, 458752, 2, 3, 458753, 2, 3, 524289, 2, 3, 524288, 2, 3, 589823, 2, 3, 589822, 2, 3, 589821, 2, 3, 655357, 2, 3, 655358, 2, 3, 655359, 2, 3, 589824, 2, 3, 589825, 2, 3)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+collision_mask = 2
 script = ExtResource("2_d4lqk")
 speed = 2323.0
 
